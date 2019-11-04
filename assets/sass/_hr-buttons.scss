@@ -1,0 +1,86 @@
+/* ==========================================================================
+                        HR-BUTTONS
+========================================================================== */
+
+/*--BTN-UP---*/
+button{
+    &.btn-up{
+        cursor: pointer;
+        width: 80px;
+        height: 80px;
+        background-color: #efefef;
+        border-radius: 60px;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0;
+        background-image: url('../img/iconos/black/icono-13.svg');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include flexCrosbrowsing();
+        justify-content:center;
+        align-items:center;
+        @include transition(.3s);
+        @include breakpoint(desktop){
+            &:hover{
+                background-color:#b7b7b7;
+                background-size: 50%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+    &.btn-enviar{
+        cursor: pointer;
+        width: 210px;
+        height: 50px;
+        background-color: white;
+        border-radius: 60px;
+        color:$azulPrincipal;
+        font-family: $fontPT;
+        font-size: 16px;
+        display: block;
+        margin: 0 auto;
+        @include transition(.3s);
+        @include breakpoint(desktop){
+            &:hover{
+                border: 1px solid white;
+                color:white;
+                background-color: $azulPrincipal;
+            }
+        }
+    }
+}
+/*--BTNES GENERAL---*/
+a{
+    &.link{
+        text-decoration: none;
+        color: $colorPrincipal;
+        cursor: pointer;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        button{
+            &.btn{
+                max-width: 280px;
+                width: 100%;
+                height: 60px;
+                border-radius: 60px;
+                border: none;
+                background-color: $colorPrincipal;
+                color: white;
+                cursor: pointer;
+                @include transition(.3s);
+                @include txtBotones($fontBotones, white);
+                @include breakpoint(desktop){
+                    &:hover{
+                        background-color:$hoverPrincipal;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==========================================================================
+                        END-HR-BUTTONS
+========================================================================== */

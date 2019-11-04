@@ -1,0 +1,120 @@
+/* ==========================================================================
+   FONTS
+   ========================================================================== */ 
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap');
+
+/*-------GeosansLight------*/
+@font-face {
+    font-family: 'GeosansLight';
+    src: url('../fonts/Geosans/GeosansLight.eot');
+    src: url('../fonts/Geosans/GeosansLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Geosans/GeosansLight.woff2') format('woff2'),
+        url('../fonts/Geosans/GeosansLight.woff') format('woff'),
+        url('../fonts/Geosans/GeosansLight.ttf') format('truetype'),
+        url('../fonts/Geosans/GeosansLight.svg#GeosansLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+/*-------Fin GeosansLight------*/
+/*-------Hiragino------*/
+@font-face {
+    font-family: 'hiragino_sans_gbw6o';
+    src: url('../fonts/Hiragino/hiraginosansgbw6-webfont.eot');
+    src: url('../fonts/Hiragino/hiraginosansgbw6-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Hiragino/hiraginosansgbw6-webfont.woff2') format('woff2'),
+         url('../fonts/Hiragino/hiraginosansgbw6-webfont.woff') format('woff'),
+         url('../fonts/Hiragino/hiraginosansgbw6-webfont.ttf') format('truetype'),
+         url('../fonts/Hiragino/hiraginosansgbw6-webfont.svg#hiragino_sans_gbw6') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*-------Fin Hiragino------*/
+/*-------Roboto------*/
+@font-face{
+   font-family:"Roboto";
+   src: url("../fonts/roboto/Roboto-Thin.ttf")format("truetype");
+   font-weight:100;
+   font-style:thin;
+}
+
+@font-face{
+   font-family:"Roboto";
+   src: url("../fonts/roboto/Roboto-Light.ttf")format("truetype");
+   font-weight:200;
+   font-style:lighter;
+}
+
+@font-face{
+   font-family:"Roboto";
+   src: url("../fonts/roboto/Roboto-Regular.ttf")format("truetype");
+   font-weight:400;
+   font-style:normal;
+}
+
+
+@font-face{
+   font-family:"Roboto";
+   src:url("../fonts/roboto/Roboto-Medium.ttf") ;
+   font-weight:500;
+   font-style:normal;
+}
+
+@font-face{
+   font-family:"Roboto";
+   src:url("../fonts/roboto/Roboto-Bold.ttf")   ;
+   font-weight:700;
+   font-style:bold;
+}
+/*------Fin Roboto------*/
+/*------Roboto Condensed------*/
+@font-face{
+   font-family:"Roboto Condensed";
+   src:url("../fonts/roboto/Roboto-Black.ttf")  ;
+   font-weight:800;
+   font-style:bolder;
+}
+@font-face{
+   font-family:"Roboto Condensed";
+   src: url("../fonts/roboto-condensed/RobotoCondensed-Thin.ttf")format("truetype");
+   font-weight:100;
+   font-style:thin;
+}
+
+@font-face{
+   font-family:"Roboto Condensed";
+   src: url("../fonts/roboto-condensed/RobotoCondensed-Light.ttf")format("truetype");
+   font-weight:200;
+   font-style:lighter;
+}
+
+@font-face{
+   font-family:"Roboto Condensed";
+   src: url("../fonts/roboto-condensed/RobotoCondensed-Regular.ttf")format("truetype");
+   font-weight:400;
+   font-style:normal;
+}
+
+@font-face{
+   font-family:"Roboto Condensed";
+   src:url("../fonts/roboto-condensed/RobotoCondensed-Medium.ttf") ;
+   font-weight:500;
+   font-style:normal;
+}
+
+@font-face{
+   font-family:"Roboto Condensed";
+   src:url("../fonts/roboto-condensed/RobotoCondensed-Bold.ttf")   ;
+   font-weight:700;
+   font-style:bold;
+}
+@font-face{
+   font-family:"Roboto Condensed";
+   src:url("../fonts/roboto-condensed/RobotoCondensed-Black.ttf")  ;
+   font-weight:800;
+   font-style:bolder;
+}
+/* ------Fin Roboto condensed------*/
+/* ==========================================================================
+   FIN FONTS
+   ========================================================================== */ 

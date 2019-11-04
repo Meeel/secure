@@ -1,0 +1,171 @@
+/* ==========================================================================
+                         HR-HEADER
+========================================================================== */
+header{
+	width: 100%;
+	height: 60px !important;
+	display: block;
+	background-color: rgba(97, 98, 103, 0.7);
+	@include flexCrosbrowsing();
+	align-items:center;
+	background-color: #6a6f75;
+	position: fixed;
+	z-index: 2;
+	@include breakpoint(tablet){
+		height: 70px !important;
+	}
+	div{
+		&#header{
+			width: 100%;
+			height: 60px;
+			@include flexCrosbrowsing();
+			align-items:center;
+			justify-content:flex-start;
+			position: relative;
+			@include transition(.3s);
+			@include breakpoint(tablet){
+				display: none;
+			}
+			span{
+				&.txt-menu{
+					color: white;
+					font-size: 15px;
+					font-weight: 700;
+				}
+			}
+			img{
+				&.menu-btn{
+					width: 30px;
+					height: auto;
+					display: block;
+					position: absolute;
+					right: 2%;
+				}
+			}
+			a{
+				&.logo-mobile{
+					cursor:pointer;
+					width: 200px;
+					height: 60px;
+					margin-left: 20px;
+					background-color: transparent;
+					background-image: url('../img/home/logo-secure-sa.png');
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+			}
+		}
+		&.menu-desktop{
+			width: 90%;
+			height: 70px;
+			@include flexCrosbrowsing();
+			align-items:center;
+			justify-content:flex-start;
+			display: none;
+			@include breakpoint(tablet){
+				width: 98%;
+				@include flexCrosbrowsing();
+				margin: 0 auto;
+			}
+			a{
+				&.logo{
+					@include breakpoint(tablet){
+						cursor: pointer;
+						width: 17%;
+						height: 70px;
+						background-color: transparent;
+						background-image: url('../img/home/logo-secure-sa.png');
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-position: center;
+					}
+					@include breakpoint(desktop){
+						width: 20%;
+					}
+				}
+			}
+			div{
+				&.menu{
+					width: 65%;
+					height: 70px;
+					margin-left:20px;
+					@include flexCrosbrowsing();
+					align-items:center;
+					justify-content:flex-start;
+					a{
+						&.menu-link{
+							@include breakpoint(tablet){
+								font-size: 14px;
+								height: 70px;
+								padding: 0 20px;
+								text-decoration: none;
+								background-color:transparent;
+								padding: 0 30px;
+								color: white;
+								font-family: $fontPT;
+								@include flexCrosbrowsing();
+								justify-content:center;
+								align-items:center;
+								@include transition(.3s);
+								&:hover{
+									background-color:white;
+									color:$azulPrincipal;
+
+								}
+							}
+							@include breakpoint(desktop){
+								font-size: 16px;
+								height: 70px;
+							}
+						}
+					}
+				}
+			}
+			a{
+				&.link-contact{
+					@include breakpoint(tablet){
+						width: 12%;
+						max-width: 210px;
+						height: 50px;
+						cursor: pointer;
+						display: block;
+						margin: 0;	
+					}
+					@include breakpoint(tablet){
+						width: 15%;	
+						@include transition(.3s);
+
+					}
+					button{
+						&.btn-contact{
+							cursor: pointer;
+							width: 100%;
+							height: 50px;
+							background-color: white;
+							border-radius: 60px;
+							color: $azulPrincipal;
+							text-align: center;
+							font-size: 16px;
+							font-family: $fontPT;
+							border:none;
+							@include transition(.3s);
+						}
+					}
+					@include breakpoint(desktop){
+						&:hover{
+							button{
+								&.btn-contact{
+									background-color:$azulPrincipal;
+									color: white;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+                        END-HR-HEADER
+========================================================================== */

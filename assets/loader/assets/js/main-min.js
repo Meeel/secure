@@ -1,0 +1,1 @@
+var animation=bodymovin.loadAnimation({container:document.getElementById("loader-secure"),render:"svg",loop:!0,autoplay:!0,path:"data.json"});

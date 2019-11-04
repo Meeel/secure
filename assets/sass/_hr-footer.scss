@@ -1,0 +1,94 @@
+/* ==========================================================================
+                         HR-FOOTER
+========================================================================== */
+footer{
+	width: 100%;
+	height: auto;
+	background-color: white;
+	padding:20px 0;
+	span{
+		&.s-up{
+			font-family: $fontGeosans;
+			font-size: 18px;
+			font-weight: 800;
+			text-align:center;
+			display: block;
+			margin: 0 auto;
+			margin: 10px 0;
+		}
+	}
+	div{
+		&.container-redes{
+			width: 100%;
+			max-width: 320px;
+			padding:10px;
+			@include flexCrosbrowsing();
+			margin: 0 auto;
+			justify-content:center;
+			align-items:center;
+			a{
+				&.link-footer{
+					width: 70px;
+					height: 70px;
+					cursor: pointer;
+					button{
+						&.btn-red{
+							cursor: pointer;
+							width: 70px;
+							height: 70px;
+							background-color: transparent;
+							border-radius: 100px;
+							border:none;
+							@include flexCrosbrowsing();
+							align-items:center;
+							justify-content:center;
+							@include transition(.3s);
+							img{
+								&.i-red{
+									width: 50%;
+								}
+							}
+							@include breakpoint(desktop){
+								&:hover{
+									background-color:#efefef;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	p{
+		&.txt-footer{
+			font-family: $fontPT;
+			color:$azulPrincipal;
+			font-size: 15px;
+			text-align: center;
+			font-weight: 300;
+		}
+		a{
+			&.link{
+				text-decoration: none;
+				font-family: $fontPT;
+				color:$azulPrincipal;
+				font-size: 15px;
+				text-align: center;
+				font-weight: 300;
+				@include transition(.3s);
+
+			}
+			&.link-footer{
+				@include breakpoint(desktop){
+					@include transition(.3s);
+					&:hover{
+						text-decoration:underline;
+					}
+				}
+			}
+		}
+	}
+}
+/* ==========================================================================
+                        END-HR-FOOTER
+========================================================================== */

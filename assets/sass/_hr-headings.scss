@@ -1,0 +1,182 @@
+/* ==========================================================================
+                         HR-HEADINGS
+========================================================================== */
+
+div{
+	&.container-headings{
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 620px;
+		padding-bottom: 20px;
+	}
+}
+h1{
+	font-family: $fontPT;
+	color: $azulPrincipal;
+	font-size: 18px;
+	text-align: center;
+	@include transition(.3s);
+	font-weight: 400;
+	@include flexCrosbrowsing();
+	justify-content:center;
+	align-items:center;
+	padding: 10px 0;
+	@include breakpoint(mobile){
+		font-size: 26px;
+	}
+	@include breakpoint(tablet){
+		font-size: 35px;
+	}
+	hr{
+		&.line-title{
+			width: 40%;
+			border: 1px solid $azulPrincipal;
+			border-bottom:none;
+			margin: 0 20px;
+
+		}
+		&.line-white{
+			border: 1px solid white;
+			border-bottom: none;
+		}
+	}
+}
+h2{
+	font-family: $fontGeosans;
+	color: $azulPrincipal;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 300;
+	@include transition(.3s);
+	@include breakpoint(tablet){
+		font-size: 18px;
+	}
+	hr{
+		&.line-title{
+			width: 40%;
+			border: 1px solid $azulPrincipal;
+			border-bottom:none;
+			margin: 0 20px;
+
+		}
+		&.line-white{
+			border: 1px solid white;
+			border-bottom: none;
+		}
+	}
+}
+h3{
+	font-family: $fontPT;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	@include transition(.3s);
+	font-weight: 400;
+	@include flexCrosbrowsing();
+	justify-content:center;
+	align-items:center;
+	padding: 10px 0;
+	@include breakpoint(tablet){
+		font-size: 20px;
+	}
+	span{
+		text-align:center;
+	}
+}
+h4{
+	font-family: $fontPT;
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	@include transition(.3s);
+	font-weight: 400;
+	@include flexCrosbrowsing();
+	justify-content:center;
+	align-items:center;
+	padding: 10px 0;
+	@include breakpoint(tablet){
+		font-size: 18px;
+	}
+}
+h5{
+	font-family: $fontPT;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	@include transition(.3s);
+	font-weight: 400;
+	@include flexCrosbrowsing();
+	justify-content:center;
+	align-items:center;
+	padding: 5px 0;
+	@include breakpoint(tablet){
+		font-size: 16px;
+	}
+}
+.h-blue{
+	color:$azulPrincipal;
+}
+.h-white{
+	color: white;
+}
+p{
+	&.txtSubtitle{
+		font-family: $fontPT;
+		font-size: 16px;
+		text-align: left;
+	}
+	&.txtGral{
+		font-family: $fontGeosans;
+		font-size: 14px;
+		text-align: left;
+		font-weight: 300;
+		a{
+			&.link-contact{
+				font-family: $fontPT;
+				color:white;
+				text-decoration:underline;
+				font-family: 14px;
+				@include breakpoint(desktop){
+					&:hover{
+						text-decoration:none;
+					}
+				}
+			}
+		}
+	}
+	&.txt-list{
+		font-family: $fontGeosans;
+		color:$azulPrincipal;
+		font-size: 16px;
+		text-align: left;
+		font-weight: 400;
+		@include breakpoint(tablet){
+			font-size: 20px;
+		}
+	}
+	&.txt-list-windows{
+		font-family: $fontGeosans;
+		color:$azulPrincipal;
+		font-size: 14px;
+		text-align: left;
+		font-weight: 400;
+		@include breakpoint(tablet){
+			font-size: 18px;
+			line-height: 23px;
+		}
+		strong{
+			font-family: $fontGeosans;
+			color:$azulPrincipal;
+			font-size: 18px;
+			text-align: left;
+			font-weight: 900;
+			@include breakpoint(tablet){
+				font-size: 26px;
+			}
+		}
+	}
+}
+/* ==========================================================================
+                         END-HR-HEADINGS
+========================================================================== */
